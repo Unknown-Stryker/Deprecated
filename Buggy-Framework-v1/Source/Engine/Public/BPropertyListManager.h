@@ -16,16 +16,16 @@ private:
   {
     friend class BPropertyListManager;
   private:
-	  //Link that's Pointing Next Node
+	  //A pointer to the next node.
 	  BPropertyDataNode* NextBPropertyLink;
 
-	  //Link that's Pointing Previous Node
+	  //A pointer to the previous node.
 	  BPropertyDataNode* PreviousBPropertyLink;
 
-	  //Gate for Child Data
+	  //Child Data pointer
 	  BClass* Child;
 
-		// Node and its Datafield "Child*" are Tagged with std::string object
+		
 	  string NameTag;
 
 	  BPropertyDataNode();
