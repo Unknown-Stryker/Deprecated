@@ -59,7 +59,6 @@ FROGMAN_TEMPLATE_CLASS_LIBRARY
 		void extend();
 		void resize(length Size_param);
 
-		// Exclusively Avaliable for m_array_pointer Types
 		void shrink_to_fit();
 
 		void insert(index Index_param, T Data_param);
