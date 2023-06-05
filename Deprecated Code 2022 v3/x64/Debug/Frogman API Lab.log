@@ -1,0 +1,8 @@
+﻿  In file included from test main.cxx:5:
+C:\Users\leeho\OneDrive\臾몄꽌\VS C++ 2022\Frogman API Lab/source/memory.allocator.hxx(375,79): warning : unused parameter 'initial_reservation_p' [-Wunused-parameter]
+C:\Users\leeho\OneDrive\臾몄꽌\VS C++ 2022\Frogman API Lab/source/memory.allocator.hxx(379,99): warning : unused parameter 'copy_ref_p' [-Wunused-parameter]
+C:\Users\leeho\OneDrive\臾몄꽌\VS C++ 2022\Frogman API Lab/source/memory.allocator.hxx(383,94): warning : unused parameter 'move_p' [-Wunused-parameter]
+C:\Users\leeho\OneDrive\臾몄꽌\VS C++ 2022\Frogman API Lab/source/memory.allocator.hxx(387,152): warning : unused parameter 'copy_ref_p' [-Wunused-parameter]
+C:\Users\leeho\OneDrive\臾몄꽌\VS C++ 2022\Frogman API Lab/source/memory.allocator.hxx(393,147): warning : unused parameter 'move_p' [-Wunused-parameter]
+C:\Users\leeho\OneDrive\臾몄꽌\VS C++ 2022\Frogman API Lab/source/memory.allocator.hxx(399,78): warning : unused parameter 'pool_size_p' [-Wunused-parameter]
+  Frogman API Lab.vcxproj -> C:\Users\leeho\OneDrive\문서\VS C++ 2022\Frogman API Lab\x64\Debug\Frogman API Lab.exe
