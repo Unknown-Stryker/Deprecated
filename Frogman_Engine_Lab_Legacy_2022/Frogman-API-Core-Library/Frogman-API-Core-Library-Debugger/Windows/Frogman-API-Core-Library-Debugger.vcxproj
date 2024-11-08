@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e39e8cea-8fe7-489c-a58e-90fac2f7cd40}</ProjectGuid>
+    <RootNamespace>FrogmanAPICoreLibraryDebugger</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(ProjectDir)$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Third-Party-APIs\OneAPI-TBB_2021_9_0\include;$(SolutionDir)\Third-Party-APIs\Boost-Libraries_1_82_0\source;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)..\..\..\Third-Party-APIs\OneAPI-TBB_2021_9_0\binaries\Windows\.lib\intel64\vc14_uwp\debug\tbb12_debug.lib;$(SolutionDir)..\..\..\Third-Party-APIs\OneAPI-TBB_2021_9_0\binaries\Windows\.lib\intel64\vc14_uwp\debug\tbbmalloc_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\Third-Party-APIs</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Third-Party-APIs\OneAPI-TBB_2021_9_0\include;$(SolutionDir)\Third-Party-APIs\Boost-Libraries_1_82_0\source;$(SolutionDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)..\..\..\Third-Party-APIs\OneAPI-TBB_2021_9_0\binaries\Windows\.lib\intel64\vc14_uwp\release\tbb12.lib;$(SolutionDir)..\..\..\Third-Party-APIs\OneAPI-TBB_2021_9_0\binaries\Windows\.lib\intel64\vc14_uwp\release\tbbmalloc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\Third-Party-APIs</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\Third-Party-APIs\OneAPI-TBB_2021_9_0\include;$(SolutionDir)..\..\..\Third-Party-APIs\Boost-Libraries_1_82_0\source;$(SolutionDir)..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)..\..\..\Third-Party-APIs\OneAPI-TBB_2021_9_0\binaries\Windows\.lib\intel64\vc14_uwp\debug\tbb12_debug.lib;$(SolutionDir)..\..\..\Third-Party-APIs\OneAPI-TBB_2021_9_0\binaries\Windows\.lib\intel64\vc14_uwp\debug\tbbmalloc_debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\Third-Party-APIs</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\..\Third-Party-APIs\OneAPI-TBB_2021_9_0\include;$(SolutionDir)..\..\..\Third-Party-APIs\Boost-Libraries_1_82_0\source;$(SolutionDir)..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(SolutionDir)..\..\..\Third-Party-APIs\OneAPI-TBB_2021_9_0\binaries\Windows\.lib\intel64\vc14_uwp\release\tbb12.lib;$(SolutionDir)..\..\..\Third-Party-APIs\OneAPI-TBB_2021_9_0\binaries\Windows\.lib\intel64\vc14_uwp\release\tbbmalloc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\..\Third-Party-APIs</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\FE\core\private\clock.cpp" />
+    <ClCompile Include="..\..\FE\core\private\configuration_deserializer.cpp" />
+    <ClCompile Include="..\..\FE\core\private\heap_utilization.cpp" />
+    <ClCompile Include="..\..\FE\core\private\launch.cpp" />
+    <ClCompile Include="..\..\FE\core\private\memory_metrics.cpp" />
+    <ClCompile Include="..\..\FE\core\private\mutex.cpp" />
+    <ClCompile Include="..\..\FE\core\private\runtime_exception.cpp" />
+    <ClCompile Include="..\..\FE\core\private\thread.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\FE\core\algorithm\numeric.hxx" />
+    <ClInclude Include="..\..\FE\core\algorithm\search.hxx" />
+    <ClInclude Include="..\..\FE\core\algorithm\sort.hxx" />
+    <ClInclude Include="..\..\FE\core\algorithm\string.hxx" />
+    <ClInclude Include="..\..\FE\core\allocator.hxx" />
+    <ClInclude Include="..\..\FE\core\allocator_adaptors.hxx" />
+    <ClInclude Include="..\..\FE\core\array\array.hxx" />
+    <ClInclude Include="..\..\FE\core\async.hpp" />
+    <ClInclude Include="..\..\FE\core\clock.hpp" />
+    <ClInclude Include="..\..\FE\core\concurrent_array\concurrent_array.hxx" />
+    <ClInclude Include="..\..\FE\core\concurrent_deque\concurrent_deque.hxx" />
+    <ClInclude Include="..\..\FE\core\concurrent_hash_map\concurrent_hash_map.hxx" />
+    <ClInclude Include="..\..\FE\core\concurrent_linked_array\concurrent_linked_array.hxx" />
+    <ClInclude Include="..\..\FE\core\concurrent_list\concurrent_list.hxx" />
+    <ClInclude Include="..\..\FE\core\concurrent_memory_block.hxx" />
+    <ClInclude Include="..\..\FE\core\concurrent_pool\concurrent_pool.hxx" />
+    <ClInclude Include="..\..\FE\core\concurrent_pool_allocator\concurrent_pool_allocator.hxx" />
+    <ClInclude Include="..\..\FE\core\concurrent_queue\concurrent_queue.hxx" />
+    <ClInclude Include="..\..\FE\core\concurrent_singleton.hxx" />
+    <ClInclude Include="..\..\FE\core\concurrent_smart_pointers\concurrent_exclusive_ptr.hxx" />
+    <ClInclude Include="..\..\FE\core\concurrent_smart_pointers\concurrent_proxy_ptr.hxx" />
+    <ClInclude Include="..\..\FE\core\concurrent_smart_pointers\concurrent_shared_ptr.hxx" />
+    <ClInclude Include="..\..\FE\core\concurrent_smart_pointers\concurrent_unique_ptr.hxx" />
+    <ClInclude Include="..\..\FE\core\concurrent_smart_pointers\concurrent_weak_ptr.hxx" />
+    <ClInclude Include="..\..\FE\core\cstring.hxx" />
+    <ClInclude Include="..\..\FE\core\debug.h" />
+    <ClInclude Include="..\..\FE\core\deque\deque.hxx" />
+    <ClInclude Include="..\..\FE\core\double_buffer.hxx" />
+    <ClInclude Include="..\..\FE\core\fstream_guard.hxx" />
+    <ClInclude Include="..\..\FE\core\fstring.hxx" />
+    <ClInclude Include="..\..\FE\core\hash_map\hash_map.hxx" />
+    <ClInclude Include="..\..\FE\core\heap_utilization.hpp" />
+    <ClInclude Include="..\..\FE\core\linked_array\linked_array.hxx" />
+    <ClInclude Include="..\..\FE\core\list\list.hxx" />
+    <ClInclude Include="..\..\FE\core\macros\attributes.h" />
+    <ClInclude Include="..\..\FE\core\macros\macro_definitions.h" />
+    <ClInclude Include="..\..\FE\core\math.hxx" />
+    <ClInclude Include="..\..\FE\core\memory_block.hxx" />
+    <ClInclude Include="..\..\FE\core\memory_metrics.h" />
+    <ClInclude Include="..\..\FE\core\movable_scoped_ref.hxx" />
+    <ClInclude Include="..\..\FE\core\mutex.hpp" />
+    <ClInclude Include="..\..\FE\core\pool\pool.hxx" />
+    <ClInclude Include="..\..\FE\core\pool_allocator\pool_allocator.hxx" />
+    <ClInclude Include="..\..\FE\core\prerequisite_symbols.h" />
+    <ClInclude Include="..\..\FE\core\private\configuration_deserializer.hpp" />
+    <ClInclude Include="..\..\FE\core\private\launch.hpp" />
+    <ClInclude Include="..\..\FE\core\private\memory.hxx" />
+    <ClInclude Include="..\..\FE\core\private\runtime_exception_enum_structs.h" />
+    <ClInclude Include="..\..\FE\core\queue\queue.hxx" />
+    <ClInclude Include="..\..\FE\core\random.hxx" />
+    <ClInclude Include="..\..\FE\core\runtime_exception.hpp" />
+    <ClInclude Include="..\..\FE\core\singleton.hxx" />
+    <ClInclude Include="..\..\FE\core\smart_pointers\exclusive_ptr.hxx" />
+    <ClInclude Include="..\..\FE\core\smart_pointers\proxy_ptr.hxx" />
+    <ClInclude Include="..\..\FE\core\smart_pointers\shared_ptr.hxx" />
+    <ClInclude Include="..\..\FE\core\smart_pointers\unique_ptr.hxx" />
+    <ClInclude Include="..\..\FE\core\smart_pointers\weak_ptr.hxx" />
+    <ClInclude Include="..\..\FE\core\string.hxx" />
+    <ClInclude Include="..\..\FE\core\tagged_object.hxx" />
+    <ClInclude Include="..\..\FE\core\function.hxx" />
+    <ClInclude Include="..\..\FE\core\thread.hpp" />
+    <ClInclude Include="..\..\FE\core\types.h" />
+    <ClInclude Include="..\..\FE\miscellaneous\configuration.h" />
+    <ClInclude Include="..\..\FE\miscellaneous\define_max_min.h" />
+    <ClInclude Include="..\..\FE\miscellaneous\google_test_extension.h" />
+    <ClInclude Include="..\..\FE\miscellaneous\private\macro_restrictions.h" />
+    <ClInclude Include="..\..\FE\miscellaneous\undefine_max_min.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

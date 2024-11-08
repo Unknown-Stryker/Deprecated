@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\..\FE\core\private\configuration_deserializer.cpp">
+      <Filter>source\core\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FE\core\private\launch.cpp">
+      <Filter>source\core\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FE\core\private\runtime_exception.cpp">
+      <Filter>source\core\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FE\core\private\clock.cpp">
+      <Filter>source\core\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FE\core\private\mutex.cpp">
+      <Filter>source\core\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FE\core\private\thread.cpp">
+      <Filter>source\core\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FE\core\private\heap_utilization.cpp">
+      <Filter>source\core\private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FE\core\private\memory_metrics.cpp">
+      <Filter>source\core\private</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{f3a7a67f-770e-4660-bb3f-ae4699cfb91c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core">
+      <UniqueIdentifier>{6944c757-0955-4172-baa8-eb7ffaa43b72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\miscellaneous">
+      <UniqueIdentifier>{d14c041c-3387-4ded-bf10-700e0414e2d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\miscellaneous\private">
+      <UniqueIdentifier>{a78eae9a-b631-4587-8047-b36726e6173c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\macros">
+      <UniqueIdentifier>{8d999761-a987-43d0-989b-266c85ee9a93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\private">
+      <UniqueIdentifier>{d7bbe125-0729-4f4a-97c5-437e7b7d76eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\algorithm">
+      <UniqueIdentifier>{24911d0a-ef05-4331-a039-3b16ec8e4a82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\smart_pointers">
+      <UniqueIdentifier>{e228fafe-046c-42d2-94ac-a3813f9aa97f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\concurrent_smart_pointers">
+      <UniqueIdentifier>{40588a22-b41a-433b-af2c-6a82e847163b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\containers">
+      <UniqueIdentifier>{4b3ba239-8274-41e8-97ee-8808cdd80e26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\containers\array">
+      <UniqueIdentifier>{7ecd90bf-549f-4167-a737-98778c73573f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\containers\linked_array">
+      <UniqueIdentifier>{f013ffa5-0faa-435a-8bbe-d5d6574b0430}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\containers\list">
+      <UniqueIdentifier>{a182134b-3470-4ecc-ab5d-9369790b9885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\containers\deque">
+      <UniqueIdentifier>{661654c1-d739-4a1a-8729-c4ebcf5bf37c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\containers\queue">
+      <UniqueIdentifier>{0fd27acf-9975-4385-b422-6dd642ae3f54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\containers\hash_map">
+      <UniqueIdentifier>{fa66cc3f-3e3d-412e-96b4-3fdb897e4b21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\concurrent_containers">
+      <UniqueIdentifier>{b6274913-5bb2-43bd-9d65-cfd6316ecbf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\concurrent_containers\concurrent_array">
+      <UniqueIdentifier>{fccaf407-a966-4102-afb8-7552607fa5fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\concurrent_containers\concurrent_deque">
+      <UniqueIdentifier>{43277e62-5e3e-48d7-bfc3-443939cf1868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\concurrent_containers\concurrent_hash_map">
+      <UniqueIdentifier>{2dcb2adf-2504-4fab-a1f1-c8df710df3d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\concurrent_containers\concurrent_linked_array">
+      <UniqueIdentifier>{6a308d31-a3ba-471a-bebb-5a87a0e61b68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\concurrent_containers\concurrent_list">
+      <UniqueIdentifier>{c8838d51-3a5b-41c8-b5b5-201a3770f8ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\concurrent_containers\concurrent_queue">
+      <UniqueIdentifier>{56c2889a-f10e-4faa-b93e-e172b2203f93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\strings">
+      <UniqueIdentifier>{41c9f8a1-8bec-40b0-bc43-1db1f39cd9a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\pools">
+      <UniqueIdentifier>{1a51c593-b1ec-42f2-89a9-f8e392ca9907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\pools\pool_allocator">
+      <UniqueIdentifier>{6b94fbde-0f6b-4f12-8b54-73383a765df3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\pools\concurrent_pool">
+      <UniqueIdentifier>{acd10c7b-1d91-4817-b4b1-9e9f9b8dd568}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\pools\pool">
+      <UniqueIdentifier>{3be770d7-b79f-4249-bd1b-991f26bdd38b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\core\pools\concurrent_pool_allocator">
+      <UniqueIdentifier>{109a6588-e4ec-4b78-bcc3-e17e1f46e622}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\FE\core\debug.h">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\runtime_exception.hpp">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\types.h">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\miscellaneous\define_max_min.h">
+      <Filter>source\miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\miscellaneous\google_test_extension.h">
+      <Filter>source\miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\miscellaneous\undefine_max_min.h">
+      <Filter>source\miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\miscellaneous\private\macro_restrictions.h">
+      <Filter>source\miscellaneous\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\macros\attributes.h">
+      <Filter>source\core\macros</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\macros\macro_definitions.h">
+      <Filter>source\core\macros</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\algorithm\search.hxx">
+      <Filter>source\core\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\algorithm\sort.hxx">
+      <Filter>source\core\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\algorithm\string.hxx">
+      <Filter>source\core\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\private\configuration_deserializer.hpp">
+      <Filter>source\core\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\private\launch.hpp">
+      <Filter>source\core\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\private\runtime_exception_enum_structs.h">
+      <Filter>source\core\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\clock.hpp">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\fstream_guard.hxx">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\mutex.hpp">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\random.hxx">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\thread.hpp">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\math.hxx">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\list\list.hxx">
+      <Filter>source\core\containers\list</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\array\array.hxx">
+      <Filter>source\core\containers\array</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\deque\deque.hxx">
+      <Filter>source\core\containers\deque</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\hash_map\hash_map.hxx">
+      <Filter>source\core\containers\hash_map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\linked_array\linked_array.hxx">
+      <Filter>source\core\containers\linked_array</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\queue\queue.hxx">
+      <Filter>source\core\containers\queue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_array\concurrent_array.hxx">
+      <Filter>source\core\concurrent_containers\concurrent_array</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_deque\concurrent_deque.hxx">
+      <Filter>source\core\concurrent_containers\concurrent_deque</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_hash_map\concurrent_hash_map.hxx">
+      <Filter>source\core\concurrent_containers\concurrent_hash_map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_linked_array\concurrent_linked_array.hxx">
+      <Filter>source\core\concurrent_containers\concurrent_linked_array</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_list\concurrent_list.hxx">
+      <Filter>source\core\concurrent_containers\concurrent_list</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_queue\concurrent_queue.hxx">
+      <Filter>source\core\concurrent_containers\concurrent_queue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_pool\concurrent_pool.hxx">
+      <Filter>source\core\pools\concurrent_pool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_smart_pointers\concurrent_proxy_ptr.hxx">
+      <Filter>source\core\concurrent_smart_pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\pool\pool.hxx">
+      <Filter>source\core\pools\pool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_pool_allocator\concurrent_pool_allocator.hxx">
+      <Filter>source\core\pools\concurrent_pool_allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\pool_allocator\pool_allocator.hxx">
+      <Filter>source\core\pools\pool_allocator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\smart_pointers\proxy_ptr.hxx">
+      <Filter>source\core\smart_pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\smart_pointers\exclusive_ptr.hxx">
+      <Filter>source\core\smart_pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\heap_utilization.hpp">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\memory_metrics.h">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\singleton.hxx">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\prerequisite_symbols.h">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\async.hpp">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\algorithm\numeric.hxx">
+      <Filter>source\core\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_smart_pointers\concurrent_exclusive_ptr.hxx">
+      <Filter>source\core\concurrent_smart_pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\private\memory.hxx">
+      <Filter>source\core\private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\miscellaneous\configuration.h">
+      <Filter>source\miscellaneous</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\tagged_object.hxx">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\double_buffer.hxx">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_memory_block.hxx">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\memory_block.hxx">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_singleton.hxx">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\allocator.hxx">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\allocator_adaptors.hxx">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\cstring.hxx">
+      <Filter>source\core\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\fstring.hxx">
+      <Filter>source\core\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\string.hxx">
+      <Filter>source\core\strings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_smart_pointers\concurrent_unique_ptr.hxx">
+      <Filter>source\core\concurrent_smart_pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_smart_pointers\concurrent_shared_ptr.hxx">
+      <Filter>source\core\concurrent_smart_pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\concurrent_smart_pointers\concurrent_weak_ptr.hxx">
+      <Filter>source\core\concurrent_smart_pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\smart_pointers\unique_ptr.hxx">
+      <Filter>source\core\smart_pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\smart_pointers\shared_ptr.hxx">
+      <Filter>source\core\smart_pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\smart_pointers\weak_ptr.hxx">
+      <Filter>source\core\smart_pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\movable_scoped_ref.hxx">
+      <Filter>source\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FE\core\function.hxx">
+      <Filter>source\core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
