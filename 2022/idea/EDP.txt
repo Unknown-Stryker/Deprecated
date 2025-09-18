@@ -1,0 +1,6 @@
+Event Driven Programming:
+https://kamang-it.tistory.com/30
+
+Function Object(Task) can be generalized by parent pointer
+https://mutpp.tistory.com/8
+

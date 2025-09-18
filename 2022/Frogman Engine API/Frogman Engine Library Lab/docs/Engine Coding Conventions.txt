@@ -1,0 +1,154 @@
+﻿// Copyright © 2023 UNKNOWN STRYKER. All Rights Reserved
+// Copyright © 2023 Hojin Lee. All Rights Reserved
+// Copyright © 2023 Joey Hojin Lee. All Rights Reserved
+
+<< Primary Commandment: WRITE EXPLICIT CODES TO MAINTAIN HIGH READABILITY >>
+
+
+- KISS RULE: Keep It Simple and Stupid
+
+
+
+<< Naming Conventions >>
+
+
+- m_var; for member variables.
+
+- l_var for local variables.
+
+- s_var for all static variables
+
+- _ptr for pointers
+
+- out_var for referenced parameter return variables
+
+- question sentence for bool variables: ex) is_it_dead;
+
+- write just name of struct members with underscore at the front of the names
+ex) _var
+
+// PREFER NOT TO USE THE STYLE BELOW FOR MACROS OR CONSTANTS TO AVOID NAMING CONFLICTION
+- use '_' for macros / example: _HELLO_I_AM_MACRO_                                       // Snake case
+
+- apply const noexcept anywhere if possible.
+
+- using global variables is strictly prohibited
+
+- var_ref for reference
+
+- var_p; for function parameters.
+
+- Use a question sentence for a boolean var.
+
+- Use underscores for expressing space characters.
+
+- Always use UPPERCASED LETTERS for global/macro constants and name of enum structs unless they mess up code readability.
+
+- names of primitive / user defined / class / struct / namespace should be written in lowercase.
+
+- Capitalize the first letter of the first word for naming header files.
+
+- member variable names for getters and setters
+
+- use lowercase letters and underscores for class, struct typenames, and function names
+
+- use uppercase for macro constants, const vars, goto labels, and enum typenames
+
+- hpp for c++ headers that include classes and structures
+
+- hxx for template classes and structures
+
+- h for c-style headers
+
+
+
+
+<< THINGS TO AVOID >>
+
+
+- DEPENDENT COUPLE CODES ARE PROHIBITED.
+
+- DO NOT ABUSE THE USE OF TEMPLATE CLASSES.
+
+- Avoid using MACRO functions, lambdas, and typedef if it's unnecessary.
+
+- NEVER USE try, catch, throw.
+
+
+
+<< ENCOURAGED TO DO >>
+
+
+- ALWAYS SET a define-guard.
+
+- template type parameter is always T.
+
+- Try to implement Memory Pools instead of allocating and deallocating memory in runtime.
+
+- Try using reference variables instead of pointers if possible.
+
+- Try to #include in the .cpp file if it is not a template class header file.
+
+- Use const everywhere if circumstances are allowed.
+
+- Using a keyword auto is allowed when the code needs to be dynamic.
+
+- prefer using the keyword "const" for function parameter variables if the variables are inferable and not intended to return values.
+
+- Always Check for nullptr.
+
+- The Practice of using a keyword goto is strictly limited to a situation of escaping more than double loops.
+
+- use "this->" for member variables.
+
+- initialize member variables in the constructor if possible.
+
+ - UTILIZE macro definitions of common_definitions.h.
+
+ if(condition) { something; }
+
+if statement example : 
+
+if ()
+{
+
+
+}
+
+
+if else statement example : 
+
+if ()
+{
+
+}
+else 
+{
+
+}
+
+
+if else if statement example : 
+
+if ()
+{
+
+}
+else if()
+{
+
+}
+
+
+- prefer early returns
+
+
+// invoking a function that has lots of parameter variables.
+ActorLineTraceSingle
+(
+	this->m_footIK_data.foot_IK_hit_result, 
+	FVector{this->m_socket_location_vector.X, this->m_socket_location_vector.Y, this->m_actor_location_vector.Z}, 
+	FVector{this->m_socket_location_vector.X, this->m_socket_location_vector.Y, GetCapsuleComponent()->GetScaledCapsuleHalfHeight()},
+	ECollisionChannel::ECC_Visibility, 
+	FCollisionQueryParams()
+);
